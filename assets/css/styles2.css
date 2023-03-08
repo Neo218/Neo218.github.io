@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #082338;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.navbar button{
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, .5);
+    color: #070707;
+    font-family: sans-serif;
+    
+
+}
+
+.inicio {
+    margin-left: 30px;
+}
+
+.inicio a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #063254;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(../img/textura-madera-en-azul.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: #ffffff;
+    text-decoration: none;
+    background: #9c27b0;
+
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+
+}
+
+.btn-home a {
+    margin: 0 10px;
+
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.datos {
+    padding: 30px;
+    background: #141414;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 16rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, .5);
+    margin: 2rem;
+
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+
+}
+
+.estudios {
+    background: #171717;
+    text-align: left;
+    padding-top: 50px;
+    background: url(../img/textura-madera-en-azul.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.experiencia {
+    background: #141414;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: justify;
+
+}
+
+.habilidades {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+    text-align: justify;
+    background: url(../img/textura-madera-en-azul.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+
+/* Para la foto de perfil */
+
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container2 .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+}
+
+.container2 .box:hover .imgBox {
+    transform: translate(-1.5rem, -1.5rem);
+}
+
+.container2 .box:hover .content2 {
+    transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+    border-color: #101010;
+}
+
+.imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+    border-radius: 1rem;
+}
+
+.content2 {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    border-radius: 1rem;
+}
+
+.content2 h2 {
+    display: block;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.content2 span {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Redes Sociales */
+
+.share {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    transition: .4s ease-in-out;
+    margin-top: 30px;
+}
+
+.imprimir {
+    background-color: #9c27b0;
+}
+
+.btn1 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn1 .instagram {
+    margin-top: 0.1em;
+    fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+    margin-top: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn1:hover {
+    background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+    fill: white;
+}
+
+.btn2 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn2 .twitter {
+    margin-top: .25em;
+    margin-left: .1em;
+    fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+    margin-top: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+    font-size: 0.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn2:hover {
+    background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+    fill: white;
+}
+
+.btn3 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+    margin-top: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn3:hover {
+    background-color: black;
+}
+
+.btn3:hover .git {
+    fill: white;
+}
+
+/*Estilo de la Brújula*/
+
+.pl {
+    display: block;
+    width: 3.375em;
+    height: 3.375em;
+  }
+  
+  .pl__arrows,
+  .pl__ring-rotate,
+  .pl__ring-stroke,
+  .pl__tick {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .pl__arrows {
+    animation-name: arrows42;
+    transform: rotate(45deg);
+    transform-origin: 16px 52px;
+  }
+  
+  .pl__ring-rotate,
+  .pl__ring-stroke {
+    transform-origin: 80px 80px;
+  }
+  
+  .pl__ring-rotate {
+    animation-name: ringRotate42;
+  }
+  
+  .pl__ring-stroke {
+    animation-name: ringStroke42;
+    transform: rotate(-45deg);
+  }
+  
+  .pl__tick {
+    animation-name: tick42;
+  }
+  
+  .pl__tick:nth-child(2) {
+    animation-delay: -1.75s;
+  }
+  
+  .pl__tick:nth-child(3) {
+    animation-delay: -1.5s;
+  }
+  
+  .pl__tick:nth-child(4) {
+    animation-delay: -1.25s;
+  }
+  
+  .pl__tick:nth-child(5) {
+    animation-delay: -1s;
+  }
+  
+  .pl__tick:nth-child(6) {
+    animation-delay: -0.75s;
+  }
+  
+  .pl__tick:nth-child(7) {
+    animation-delay: -0.5s;
+  }
+  
+  .pl__tick:nth-child(8) {
+    animation-delay: -0.25s;
+  }
+  
+  /* Animaciones */
+  @keyframes arrows42 {
+    from {
+      transform: rotate(45deg);
+    }
+  
+    to {
+      transform: rotate(405deg);
+    }
+  }
+  
+  @keyframes ringRotate42 {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes ringStroke42 {
+    from,
+      to {
+      stroke-dashoffset: 452;
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      stroke-dashoffset: 169.5;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  @keyframes tick42 {
+    from,
+      3%,
+      47%,
+      to {
+      stroke-dashoffset: -12;
+    }
+  
+    14%,
+      36% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+@media (max-width: 768px) {
+
+    .container2 .box:hover .content2 {
+        transform: translate(0, 3.5rem);
+    }
+
+    .container2 .box:hover .imgBox {
+        transform: translate(0, -3.5rem);
+    }
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+
+    }
+
+    .datos {
+        height: 120vh;
+    }
+
+    .estudios {
+        height: 120vh;
+    }
+
+    .experiencia {
+        height: 120vh;
+    }
+
+    .habilidades {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .container2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container2 .box {
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+        margin: 3rem;
+    }
+
+    .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10rem;
+        height: 10rem;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+        border-radius: 1rem;
+    }
+
+    .imgBox img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        resize: both;
+        border-radius: 1rem;
+    }
+
+    .content2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 1;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        border-radius: 1rem;
+    }
+
+    .content2 h2 {
+        display: block;
+        font-size: 1rem;
+        color: #111;
+        font-weight: 500;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .content2 span {
+        color: #555;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+}
